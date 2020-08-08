@@ -13,11 +13,11 @@ export default class RollDice extends Component {
   }
   rollDice() {
     let numbers = ["one", "two", "three", "four", "five", "six"];
-    let index1 = Math.floor(Math.random() * numbers.length);
-    let index2 = Math.floor(Math.random() * numbers.length);
+    let random1 = numbers[Math.floor(Math.random() * numbers.length)];
+    let random2 = numbers[Math.floor(Math.random() * numbers.length)];
     this.setState({
-      die1: numbers[index1],
-      die2: numbers[index2],
+      die1: random1,
+      die2: random2,
     });
   }
   render() {
